@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/roadScannerRoot"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/roadGridFrame"
+        android:layout_width="270dp"
+        android:layout_height="115dp"
+        android:background="@drawable/bg_road_box">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#B3000000"
+            android:paddingStart="8dp"
+            android:paddingTop="3dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="3dp"
+            android:text="KÉO KHUNG ĐÈ LÊN BẢNG CẦU (6 HÀNG)"
+            android:textColor="#00E5FF"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCaptureRoadNow"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_weight="1.4"
+            android:backgroundTint="#00B0FF"
+            android:text="✅ Bắt toàn bộ bảng cầu"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCloseRoadBox"
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="4dp"
+            android:layout_weight="0.6"
+            android:backgroundTint="#455A64"
+            android:text="Đóng"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+    </LinearLayout>
+</LinearLayout>
